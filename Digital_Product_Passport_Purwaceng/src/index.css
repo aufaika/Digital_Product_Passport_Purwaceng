@@ -1,0 +1,328 @@
+:root {
+  --primary: #2d6a4f;
+  --secondary: #d8f3dc;
+  --text-dark: #1b4332;
+  --text-light: #f8f9fa;
+  --bg-color: #ffffff;
+  --bg-soft: #f4f8f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+/* --- TATA LETAK DEFAULT (UNTUK LAPTOP / PC) --- */
+.app-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(45, 106, 79, 0.7), rgba(45, 106, 79, 0.9)),
+    url("https://images.unsplash.com/photo-1596414603952-4467144be95a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80")
+      center/cover;
+  color: var(--text-light);
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.hero p {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.main-content {
+  padding: 20px 40px;
+}
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.section:last-child {
+  border-bottom: none;
+}
+.section.bg-soft {
+  background-color: var(--bg-soft);
+  padding: 40px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.section-title {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.profile-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling Varian */
+.variant-block {
+  margin-bottom: 30px;
+}
+.variant-title {
+  font-size: 18px;
+  color: #384d3c;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+}
+.divider-light {
+  border: 0;
+  height: 1px;
+  background: #eaeaea;
+  margin: 30px 0;
+}
+
+/* Grid Panduan Penyeduhan */
+.brewing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.step-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.step-num {
+  background: var(--primary);
+  color: white;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.step-text h4 {
+  font-size: 15px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+.step-text p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Grid Inovasi Penyajian */
+.innovation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.innovation-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d8f3dc;
+  box-shadow: 0 4px 6px rgba(45, 106, 79, 0.05);
+  transition: transform 0.3s;
+}
+.innovation-card:hover {
+  transform: translateY(-5px);
+}
+.innovation-card h4 {
+  font-size: 16px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.innovation-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 30px;
+  padding: 50px 40px;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-col h3 {
+  font-size: 20px;
+  color: #2b3930;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.footer-col h4 {
+  font-size: 16px;
+  color: #4f6356;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.text-gray {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mt-auto {
+  margin-top: auto;
+}
+
+.map-placeholder {
+  background-color: #e2e8e4;
+  border: 2px dashed #9ca3af;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+.map-placeholder p {
+  color: #6b7280;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Tombol */
+.btn-outline,
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.btn-outline {
+  border: 1.5px solid #2b3930;
+  color: #2b3930;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: #f3f4f6;
+}
+.btn-dark {
+  background-color: #384d3c;
+  color: #ffffff;
+  border: 1px solid #384d3c;
+}
+.btn-dark:hover {
+  background-color: #2b3930;
+}
+
+/* =========================================
+   TATA LETAK RESPONSIF (UNTUK LAYAR HP < 768px) 
+   ========================================= */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 0;
+    box-shadow: none;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+  .section {
+    padding: 30px 0;
+  }
+  .section.bg-soft {
+    padding: 25px 15px;
+    margin: 10px -15px;
+    border-radius: 0;
+  }
+
+  /* Hancurkan Grid, jadikan 1 kolom ke bawah */
+  .brewing-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .innovation-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Di HP: Card penyeduhan dibuat horizontal */
+  .step-card {
+    flex-direction: row;
+    text-align: left;
+    padding: 15px;
+  }
+
+  /* Footer menumpuk ke bawah */
+  .footer-section {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .map-placeholder {
+    min-height: 250px;
+    margin: 10px 0;
+  }
+
+  .btn-outline,
+  .btn-dark {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
