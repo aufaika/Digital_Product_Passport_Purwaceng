@@ -1,5 +1,5 @@
 function App() {
-  const noWhatsApp = "6281234567890"; // Ganti dengan nomor asli BFF
+  const noWhatsApp = "6285325044407"; // Ganti dengan nomor asli BFF
   const pesanTeks =
     "Halo Best Friend Forever (BFF), saya melihat Digital Product Passport. Saya ingin repeat order Purwaceng. Apakah stok Serbuk/Akarnya masih ada?";
   const linkWA = `https://api.whatsapp.com/send?phone=${noWhatsApp}&text=${encodeURIComponent(pesanTeks)}`;
@@ -43,7 +43,7 @@ function App() {
                 <div className="step-text">
                   <h4>Takaran Pas</h4>
                   <p>
-                    Ambil 1-2 sendok teh serbuk Purwatan, masukkan ke dalam
+                    Ambil 1/2 sendok teh serbuk Purwatan, masukkan ke dalam
                     cangkir kosong.
                   </p>
                 </div>
@@ -94,8 +94,8 @@ function App() {
                 <div className="step-text">
                   <h4>Proses Perebusan</h4>
                   <p>
-                    Rebus dengan 2-3 gelas air. Biarkan mendidih hingga air
-                    menyusut menjadi 1 gelas.
+                    Rebus dengan 2-3 gelas air matang. Biarkan mendidih hingga
+                    air berubah warna.
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ function App() {
                   <h4>Saring & Sajikan</h4>
                   <p>
                     Saring air rebusan ke dalam gelas. Anda bisa mencampurnya
-                    dengan pemanis atau rempah lain.
+                    dengan pemanis atau rempah lain dan siap disajikan.
                   </p>
                 </div>
               </div>
@@ -122,11 +122,10 @@ function App() {
 
           <div className="innovation-grid">
             <div className="innovation-card">
-              <h4>☕ Kopi Purwaceng</h4>
+              <h4>🌿 Purwaceng Rempah (Wedang)</h4>
               <p>
-                Campurkan 1 sdt serbuk Purwaceng atau air rebusan akar ke dalam
-                secangkir Kopi Hitam (Robusta/Arabica). Cocok untuk
-                anti-ngantuk.
+                Saat merebus Purwaceng kering, tambahkan bahan lain yang senyawa
+                dengan purwaceng. Efek menghangatkan badan akan berkali-lipat!
               </p>
             </div>
             <div className="innovation-card">
@@ -138,11 +137,11 @@ function App() {
               </p>
             </div>
             <div className="innovation-card">
-              <h4>🌿 Purwaceng Rempah (Wedang)</h4>
+              <h4>☕ Kopi Purwaceng</h4>
               <p>
-                Saat merebus akar Purwaceng, tambahkan memaran jahe merah,
-                serai, dan kapulaga. Efek menghangatkan badan akan
-                berkali-lipat!
+                Campurkan 1/2 sdt serbuk Purwaceng atau air rebusan akar ke
+                dalam secangkir Kopi Hitam (Robusta/Arabica). Cocok untuk
+                anti-ngantuk.
               </p>
             </div>
           </div>
@@ -184,15 +183,25 @@ function App() {
         </div>
 
         {/* Kolom Tengah: Peta */}
-        <div className="footer-col map-placeholder">
-          <p>[FOTO TOKO / PETA]</p>
+        <div className="map-image-container">
+          <img
+            src="/peta-bismo.jpg"
+            alt="Peta Lokasi Basecamp Gunung Bismo"
+            className="map-placeholder"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "250px",
+              borderRadius: "8px",
+            }}
+          />
         </div>
 
         {/* Kolom Kanan: Kontak & WA */}
         <div className="footer-col">
           <h3>Hubungi Kami</h3>
-          <p className="text-gray mb-2">Telepon: 0812-3456-7890</p>
-          <p className="text-gray mb-4">Instagram: @bestfriendforever_bff</p>
+          <p className="text-gray mb-2">Telepon: 085325044407</p>
+
           <a
             href={linkWA}
             target="_blank"
